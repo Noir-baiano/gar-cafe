@@ -1,5 +1,7 @@
 # GAR Café
 
+**Site publicado:** [noir-baiano.github.io/gar-cafe](https://noir-baiano.github.io/gar-cafe/)
+
 Loja demonstrativa para o trabalho de **Gestão dos Negócios Agroindustriais**. A proposta combina café arábica, barris de carvalho que receberam pimenta biquinho e um molho de pimenta próprio.
 
 O site é estático, responsivo, sem dependências de instalação, sem cadastro e sem cobranças. Não requer servidor de aplicação nem banco de dados. Todas as imagens, fontes de sistema e scripts funcionam sem serviços externos.
@@ -8,7 +10,7 @@ O site é estático, responsivo, sem dependências de instalação, sem cadastro
 
 Abra `docs/index.html` no navegador. Para testar por HTTP com Node.js instalado, execute `npm run dev` e acesse o endereço exibido no terminal. O navegador pode restringir a função de copiar texto quando a página é aberta diretamente como arquivo; a compra simulada continua funcionando.
 
-## Publicar no GitHub Pages
+## Publicar outra cópia no GitHub Pages
 
 1. Crie um repositório público chamado `gar-cafe` na sua conta do GitHub.
 2. Envie o conteúdo desta pasta para a raiz do repositório, preservando a pasta `docs` e seus arquivos. O ZIP precisa ser extraído antes do envio.
@@ -67,7 +69,7 @@ Ao alterar preços, revise também o destaque do kit em `index.html`. Antes de u
 
 Execute `npm test` para conferir os cálculos de cupom, kit, resgate de pontos, frete, arredondamento e saneamento do estado local. A interface foi revisada no navegador, incluindo a compra e uma apresentação responsiva em viewport de 390 × 844 px. O arquivo `tests/mobile-preview.html` é usado somente pelo servidor de desenvolvimento e não é publicado na pasta `docs`.
 
-A API WebMCP não estava disponível no navegador de validação, portanto os seus adaptadores opcionais não foram testados por execução. Os fluxos normais da loja não dependem deles.
+No endereço público, também foram validadas por execução as ferramentas WebMCP de catálogo, leitura da sacola e adição de produto. Uma quantidade inválida foi recusada sem alterar a sacola. A compra normal funciona sem essa API.
 
 ## Limites da demonstração
 
